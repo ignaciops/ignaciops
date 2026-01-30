@@ -1,0 +1,66 @@
+name: Update Blog Posts
+
+on:
+  workflow_dispatch
+
+jobs:
+  update-posts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Fetch and update blog posts
+        run: |
+          python3 << 'EOF'
+          import feedparser
+          import re
+          from datetime import datetime
+
+          # Fetch RSS feed
+          feed = feedparser.parse('https://ignaciops.dev/rss.xml')
+
+          # Get latest 3 posts
+          latest_posts = feed.entries[:3]
+
+          # Format posts
+          posts_md = "<!-- BEGIN: Blog Feed -->\n"
+          for post in latest_posts:
+              title = post.title
+              link = post.link
+              pub_date = datetime(*post.published_parsed[:6]).strftime('%b %d, %Y')
+              posts_md += f"- **[{title}]({link})** - {pub_date}\n"
+          posts_md += "<!-- END: Blog Feed -->"
+
+          # Read current README
+          with open('README.md', 'r', encoding='utf-8') as f:
+              readme = f.read()
+
+          # Replace blog posts section
+          pattern = r'<!-- BEGIN: Blog Feed -->.*?<!-- END: Blog Feed -->'
+          updated_readme = re.sub(pattern, posts_md, readme, flags=re.DOTALL)
+
+          # Write back
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(updated_readme)
+
+          print("✅ Blog posts updated successfully!")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update blog posts" && git push)
