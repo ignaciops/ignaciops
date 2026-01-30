@@ -34,8 +34,9 @@ Tech enthusiast & Coffee enjoyer. SDET passionate about test automation, quality
 ### 📝 Latest Blog Posts
 
 <!-- BEGIN: Blog Feed -->
-<!-- This section will be auto-updated with your latest posts from ignaciops.dev -->
-- Check out my latest articles on [ignaciops.dev](https://ignaciops.dev)
+- **[Arquitectura Hexagonal en Testing: Separar el QUÉ del CÓMO](https://ignaciops.dev/blog/arquitectura-hexagonal-en-testing-separar-el-que-del-como/)** - Jan 27, 2026
+- **[Roadmap 2026. Test Architecture: 12 meses de aprendizaje continuo](https://ignaciops.dev/blog/roadmap-2026-test-architecture-12-meses-de-aprendizaje-continuo/)** - Jan 04, 2026
+- **[Retrospectiva 2025](https://ignaciops.dev/blog/retrospectiva-2025/)** - Dec 31, 2025
 <!-- END: Blog Feed -->
 
 ### 🎯 Featured Repositories
