@@ -43,7 +43,7 @@ Tech enthusiast & Coffee enjoyer. SDET passionate about test automation, quality
 
 - **[test-architecture-learning](https://github.com/ignaciops/test-architecture-learning)** - Test automation architecture patterns and best practices
 - **[ignaciopsdev-blog](https://github.com/ignaciops/ignaciopsdev-blog)** - My blog built with Astro
-- **[presentacion-git-init-2026](https://github.com/ignaciops/presentacion-git-init-2026)** - Current learning project
+- **[presentacion-git-init-2026](https://github.com/ignaciops/presentacion-git-init-2026)** - Presentation given at Lightning Talks Temp 2 Ep 1 hosted by [DgoTecHub](https://dgotechub.org/)
 
 ### 🌱 Learning Journey
 
