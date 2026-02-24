@@ -27,8 +27,8 @@ Tech enthusiast & Coffee enjoyer. SDET passionate about test automation, quality
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats-ignacios-projects-974c9241.vercel.app/api?username=ignaciops&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats-ignacios-projects-974c9241.vercel.app/api/top-langs/?username=ignaciops&layout=compact&theme=dark&hide_border=true" alt="Top Languages"/>
+  <img src="https://github-readme-stats-seven-delta-66.vercel.app//api?username=ignaciops&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats-seven-delta-66.vercel.app//api/top-langs/?username=ignaciops&layout=compact&theme=dark&hide_border=true" alt="Top Languages"/>
 </div>
 
 ### 📝 Latest Blog Posts
